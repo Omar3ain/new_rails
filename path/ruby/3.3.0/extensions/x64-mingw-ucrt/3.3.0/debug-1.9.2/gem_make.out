@@ -1,0 +1,20 @@
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-s29aih sitelibdir\=./.gem.20240528-12844-s29aih clean
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-s29aih sitelibdir\=./.gem.20240528-12844-s29aih
+generating debug-x64-mingw-ucrt.def
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-s29aih sitelibdir\=./.gem.20240528-12844-s29aih install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20240528-12844-s29aih/debug
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-s29aih sitelibdir\=./.gem.20240528-12844-s29aih clean

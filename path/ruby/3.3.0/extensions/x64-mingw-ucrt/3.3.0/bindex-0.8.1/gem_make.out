@@ -1,0 +1,19 @@
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-dqd00r sitelibdir\=./.gem.20240528-12844-dqd00r clean
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-dqd00r sitelibdir\=./.gem.20240528-12844-dqd00r
+generating cruby-x64-mingw-ucrt.def
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-dqd00r sitelibdir\=./.gem.20240528-12844-dqd00r install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20240528-12844-dqd00r/skiptrace/internal
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-dqd00r sitelibdir\=./.gem.20240528-12844-dqd00r clean

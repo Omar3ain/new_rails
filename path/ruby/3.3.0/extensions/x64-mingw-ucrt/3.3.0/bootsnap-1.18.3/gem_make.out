@@ -1,0 +1,22 @@
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bootsnap-1.18.3/ext/bootsnap
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+checking for fdatasync() in unistd.h... no
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bootsnap-1.18.3/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-8rr27o sitelibdir\=./.gem.20240528-12844-8rr27o clean
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bootsnap-1.18.3/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-8rr27o sitelibdir\=./.gem.20240528-12844-8rr27o
+generating bootsnap-x64-mingw-ucrt.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bootsnap-1.18.3/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-8rr27o sitelibdir\=./.gem.20240528-12844-8rr27o install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20240528-12844-8rr27o/bootsnap
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/bootsnap-1.18.3/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-8rr27o sitelibdir\=./.gem.20240528-12844-8rr27o clean

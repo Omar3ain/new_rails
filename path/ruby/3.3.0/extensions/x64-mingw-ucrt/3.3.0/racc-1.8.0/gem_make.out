@@ -1,0 +1,19 @@
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-9fx9da sitelibdir\=./.gem.20240528-12844-9fx9da clean
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-9fx9da sitelibdir\=./.gem.20240528-12844-9fx9da
+generating cparse-x64-mingw-ucrt.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-9fx9da sitelibdir\=./.gem.20240528-12844-9fx9da install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240528-12844-9fx9da/racc
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-9fx9da sitelibdir\=./.gem.20240528-12844-9fx9da clean

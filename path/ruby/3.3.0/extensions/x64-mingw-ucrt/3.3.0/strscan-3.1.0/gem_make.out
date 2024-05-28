@@ -1,0 +1,21 @@
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... yes
+creating Makefile
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-5159kz sitelibdir\=./.gem.20240528-12844-5159kz clean
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-5159kz sitelibdir\=./.gem.20240528-12844-5159kz
+generating strscan-x64-mingw-ucrt.def
+compiling strscan.c
+linking shared-object strscan.so
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-5159kz sitelibdir\=./.gem.20240528-12844-5159kz install
+/usr/bin/install -c -m 0755 strscan.so ./.gem.20240528-12844-5159kz
+
+current directory: E:/ITI_Assuit/ITI/Ruby/new_rails/path/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240528-12844-5159kz sitelibdir\=./.gem.20240528-12844-5159kz clean
