@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get "posts" ,to:"posts#index"
+
+  #this posts for rought
+  # to => posts --> controler called posts
+  # index function called index i will create 
 end
