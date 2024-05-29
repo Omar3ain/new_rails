@@ -5,5 +5,14 @@ class PostsController < ApplicationController
 
     def new
         @post=Post.new
-    end    
+    end  
+    
+    def create
+        @post=Post.new({title: params[:post][:title],content:params[:post][:content]})
+        if @post.save
+            redirect_to post_url(@post)
+        else
+            render :new , status:422
+        end        
+    end
 end    
