@@ -1,0 +1,14 @@
+<div class="post">
+  <h2><%= "Title: #{@post.title}" %></h2>
+  <h2><%= "Content: #{@post.content}" %></h2>
+
+  <br>
+
+<div>
+  <%= link_to "Back to posts", posts_path %>
+</div>
+  <%= link_to "edit", edit_post_path(@post)%>
+
+  <%= button_to "Destroy this post", @post, method: :delete %>
+
+</div>
