@@ -1,0 +1,28 @@
+<h1>Users#index</h1>
+
+<p style="color: green"><%= notice %></p>
+
+<h1>User</h1>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <p>
+        title: <%= user.name %>
+    </p>
+    <p>
+        Date Of birth: <%= user.DBO %>
+    </p>
+     <p>
+        Date Of birth: <%= user.email %>
+    </p>
+    <p>
+        Date Of birth: <%= user.phone_number %>
+    </p>
+    <p>
+      <%= link_to "Show this User", user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New User", new_user_path %>
+
