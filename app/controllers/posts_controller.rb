@@ -24,7 +24,7 @@ class PostsController < ApplicationController
         @post = Post.find(params[:id])
     end
 
-    def def update
+    def update
         @post = Post.find(params[:id])
         if @post.update({title: params[:post][:title],content:params[:post][:content]})
            redirect_to post_url(@post)
@@ -33,5 +33,9 @@ class PostsController < ApplicationController
         end
     end
         
+    def destroy 
+        @post = Post.find(params[:id])
+        @post.destroy!
+        redirect_to posts_url
     end
 end    
