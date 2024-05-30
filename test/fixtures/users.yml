@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  DOB: 2024-05-30
-  email: MyString
   phone: 1
+  email: MyString
+  DOB: 2024-05-30
 
 two:
   name: MyString
-  DOB: 2024-05-30
-  email: MyString
   phone: 1
+  email: MyString
+  DOB: 2024-05-30
