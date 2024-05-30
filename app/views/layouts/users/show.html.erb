@@ -1,0 +1,5 @@
+<%= render partial: "user", locals: { user: @user } %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %> |
+<%= button_to 'Destroy this user', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
