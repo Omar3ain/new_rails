@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
   def create
     puts "++++ #{params}"
-    @user = User.new({"name": params[:user][:name],"DBO": params[:user][:DBO],"email":params[:user][:email],"phone_number": params[:user][:phone_number]})
+    @user = User.new({"name": params[:user][:name],"email":params[:user][:email],})
     if @user.save
       redirect_to users_path
     else
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @user.update({"name": params[:user][:name],"DBO": params[:user][:DBO],"email":params[:user][:email],"phone_number": params[:user][:phone_number]})
+    if @user.update({"name": params[:user][:name],"email":params[:user][:email]})
       redirect_to users_path
     else
       render :edit

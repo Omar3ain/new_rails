@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all()
+    @posts = Post.includes(:user).all
     render action: 'index'
   end
 
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new({"title": params[:post][:title],"content": params[:post][:content]})
+    @post = Post.new({"title": params[:post][:title],"content": params[:post][:content], "user_id": params[:post][:user_id]})
     if @post.save
       redirect_to posts_path
     else
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    if @post.update({title: params[:post][:title], content: params[:post][:content]})
+    if @post.update({title: params[:post][:title], content: params[:post][:content],"user_id": params[:post][:user_id]})
       redirect_to posts_path
     else
       render :edit

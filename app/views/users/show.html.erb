@@ -5,15 +5,11 @@
 <p>
     name: <%= @user.name %>
 </p>
-<p>
-    DBO: <%= @user.DBO %>
-</p>
+
 <p>
     Email: <%= @user.email %>
 </p>
-<p>
-    phone_number: <%= @user.phone_number %>
-</p>
+
 
 <%= link_to "Update User", edit_user_path %>
 <%= button_to "Delete user",  @useer , method: :delete %>

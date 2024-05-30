@@ -7,17 +7,14 @@
 <div id="users">
   <% @users.each do |user| %>
     <p>
-        title: <%= user.name %>
+        id : <%= user.id %> <br>
+        Name: <%= user.name %>
     </p>
-    <p>
-        Date Of birth: <%= user.DBO %>
-    </p>
+
      <p>
-        Date Of birth: <%= user.email %>
+        Email: <%= user.email %>
     </p>
-    <p>
-        Date Of birth: <%= user.phone_number %>
-    </p>
+
     <p>
       <%= link_to "Show this User", user %>
     </p>

@@ -2,12 +2,8 @@
 
 one:
   name: MyString
-  DBO: 2024-05-29
   email: MyString
-  phone_number: MyString
 
 two:
   name: MyString
-  DBO: 2024-05-29
   email: MyString
-  phone_number: MyString
