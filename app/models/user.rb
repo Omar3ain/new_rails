@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    has_many :posts, foreign_key: "creator_id"
+   has_and_belongs_to_many :posts  
 end
