@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
     def index 
         @posts=Post.all
+        # @posts=@posts.to_a
+        puts "////////////#{@posts.to_a}"
     end
 
     def new 
@@ -34,8 +36,7 @@ class PostsController < ApplicationController
 
     def create
 
-        @post=Post.new(title:params[:post][:title],content:[:post][:content])
-
+        @post = Post.new(title: params[:post][:title], content: params[:post][:content])
         if @post.save
             redirect_to post_url(@post)
         else
