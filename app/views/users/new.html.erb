@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>New User</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    h1 {
+      color: #1877f2;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #1877f2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #166fe5;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      background-color: #3b5998;
+      border: 1px solid #3b5998;
+    }
+
+    .btn-secondary:hover {
+      background-color: #344e86;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>New user</h1>
+
+    <%= render "form", user: @user %>
+
+    <br>
+
+    <div class="back-link">
+      <%= link_to "Back to users", users_path, class: "btn btn-secondary" %>
+    </div>
+  </div>
+</body>
+</html>

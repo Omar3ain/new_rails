@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>User List</title>
+  <style>
+    #users-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #users-table th, #users-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #users-table th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+
+    #users-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    #users-table a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    #users-table a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Users</h1>
+
+  <%= link_to "New user", new_user_path, style: "width: 120px; margin:10px; color: white; background-color: green; display: inline-block; text-align: center; padding: 5px;" %>
+
+  <table id="users-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td>
+            <%= link_to "Show", user %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</body>
+</html>

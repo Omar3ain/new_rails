@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Editing User</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .back-link {
+      margin-top: 20px;
+    }
+
+    .back-link a {
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-link a.show-user {
+      background-color: #28a745;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .back-link a.show-user:hover {
+      background-color: #218838;
+    }
+
+    .back-link a.back-users {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .back-link a.back-users:hover {
+      background-color: #c82333;
+    }
+
+    .link-separator {
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Editing user</h1>
+
+    <%= render "form", user: @user %>
+
+    <br>
+
+    <div class="back-link">
+      <%= link_to "Show this user", @user, class: "show-user" %>
+      <span class="link-separator">|</span> 
+      <%= link_to "Back to users", users_path, class: "back-users" %>
+    </div>
+  </div>
+</body>
+</html>
